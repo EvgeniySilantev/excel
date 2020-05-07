@@ -1,0 +1,25 @@
+{
+  "name": "excel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvgeniySilantev/excel.git"
+  },
+  "author": "Evgeniy Silantev <silantev-zhenya@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvgeniySilantev/excel/issues"
+  },
+  "homepage": "https://github.com/EvgeniySilantev/excel#readme",
+  "dependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
