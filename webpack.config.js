@@ -55,12 +55,14 @@ module.exports = {
         collapseWhitespace: isProd,
       },
     }),
-    new CopyWebpack([
-      {
-        from: path.resolve(__dirname, 'src/favicon.ico'),
-        to: path.resolve(__dirname, 'dist'),
-      },
-    ]),
+    new CopyWebpack({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/favicon.ico'),
+          to: path.resolve(__dirname, 'dist'),
+        },
+      ],
+    }),
     new MiniCssExtractPlugin({
       filename: filename('css'),
     }),
